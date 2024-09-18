@@ -14,6 +14,12 @@ export const StyledHeaderTitle = styled.h2`
     text-align: center;
 `
 
+export const StyledContainer = styled.div`
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1000px;
+`
+
 export const StyledTabContainer = styled.div`
     width: 100%;
     margin: 0 auto;
@@ -39,8 +45,8 @@ export const StyledTabBtn = styled.button`
     font-size: 1.6rem;
     border-radius: 2rem;
     padding: 1.125rem 2.4rem;
-    background-color: inherit;
     transition: all 0.5s ease;
+    background-color: transparent;
     
     ${props => props.$active && `
         color: hsl(0, 0%, 100%);

@@ -2,6 +2,7 @@
 
 // Styles & Styled Components
 import { GlobalStyles } from "./styles/GlobalStyles"
+import { StyledContainer } from "./styles/Utilities.styled"
 
 // Components
 import { Tabs } from "./Components/Tabs/Tabs"
@@ -13,8 +14,10 @@ function App() {
   return (
     <> 
       <GlobalStyles />
-      <Header />
-      <Tabs />
+      <StyledContainer>
+        <Header />
+        <Tabs />
+      </StyledContainer>
     </>
   )
 }
